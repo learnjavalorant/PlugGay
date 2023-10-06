@@ -1,5 +1,5 @@
 
-# remake from pluggay
+# remake from plugmanx
 # PlugGay
 
 PlugGay là một plugin đơn giản, dễ sử dụng cho phép quản trị viên máy chủ quản lý các plugin từ trong trò chơi hoặc bảng điều khiển mà không cần phải khởi động lại máy chủ.
