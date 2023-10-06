@@ -1,0 +1,73 @@
+###
+# Custom Messaging File.
+#
+# Messaging can include any of the formatting codes found on http://minecraft.gamepedia.com/Formatting_codes and must use the '&' character to denote them.
+# Make sure to include the single quotes around the custom messages.
+# With new updates, this is subject to change and previous versions might not display information properly. Changes will be noted in the changelog.
+###
+
+prefix: '&7[&bPlugGay&7] '
+check:
+  header: '&9Đang truy xuất phiên bản plugin...'
+  not-found: '&9Plugin chưa được cài đặt - phiên bản mới nhất hiện có là "{0}".'
+  not-found-spigot: '&cKhông thể tìm nạp dữ liệu plugin - plugin có tồn tại dưới dạng Tài nguyên Spigot không?'
+  out-of-date: '&cPhiên bản hiện tại (&4{0}&c) không khớp với phiên bản mới nhất (&2{1}&c).'
+  out-of-date-player: '&cCó thể đã outdated (Đã cài đặt -> Mới nhất): {0}'
+  up-to-date: '&9Plugin dường như được cập nhật bằng phiên bản "{0}".'
+  up-to-date-player: '&aCó vẻ như đã cập nhật (Đã cài đặt): {0}'
+  file-done: '&9Kết xuất tệp hoàn tất: {0}'
+  unknown: '&cThông tin phiên bản chưa được biết.'
+  unknown-player: '&cKhông xác định (Đã cài đặt): {0}'
+  not-available: '&cThông tin phiên bản cho {0} không có sẵn.'
+dump:
+  dumped: '&9Plugins dumped tới {0}.'
+  error: '&4Không thể dump vào tập tin.'
+error:
+  ignored: '&cPlugGay được config để bỏ qua plugin đó.'
+  invalid-plugin: '&cĐó không phải là một plugin hợp lệ.'
+  no-permission: '&cMày đéo có quyền làm cái con cặc này!'
+  specify-plugin: '&cBạn phải chỉ định một plugin.'
+  specify-command: '&cBạn phải chỉ định một lệnh.'
+  paper-plugin: "&cPaper plugins hiện không được hỗ trợ! sorry"
+  usage:
+    command: '&7- &9Lệnh: &7{0}'
+    description: '&7- &9Thông tin: &7{0}'
+    usage: '&7- &9Sử dụng: &7{0}'
+help:
+  header: '&7--------------------- [&b PlugGay &7] ---------------------'
+  help: '&7- &b/pluggay help &f- &7Hiển thị cái này'
+  list: '&7- &b/pluggay list [-v] &f- &7Danh sách tất cả các plugin (-v hiển thị các phiên bản).'
+  info: '&7- &b/pluggay info <plugin> &f- &7Thông tin về một plugin.'
+  usage: '&7- &b/pluggay usage <plugin> &f- &7Liệt kê các lệnh mà plugin đã đăng ký.'
+  lookup: '&7- &b/pluggay lookup <command> &f- &7Tìm plugin mà lệnh được đăng ký.'
+  load: '&7- &b/pluggay load <plugin> &f- &7Load một plugin.'
+  reload: '&7- &b/pluggay reload <plugin|all> &f- &7Load lại một plugin.'
+  unload: '&7- &b/pluggay unload <plugin> &f- &7Không load một plugin.'
+  check: '&7- &b/pluggay check <plugin|all> [-f] &f- &7Kiểm tra xem plugin có được cập nhật hay không (-f dump vào tệp cho tất cả).'
+info:
+  header: 'Thông tin Plugin: {0}'
+  version: '&7- Phiên bản: &a{0}'
+  authors: '&7- Tác giả(s): &a{0}'
+  status: '&7- Trạng thái: {0}'
+  depends: '&7- Depends: {0}'
+  softdepends: '&7- SoftDepends: &a{0}'
+list:
+  list: '&9Plugins ({0}): {1}'
+load:
+  already-loaded: '&c{0} đã được load.'
+  cannot-find: '&cKhông thể tìm thấy tập tin và không tìm thấy thông tin.'
+  invalid-description: '&cPlugin đó có thông tin không hợp lệ.'
+  invalid-plugin: '&cTệp đó không phải là plugin hợp lệ.'
+  loaded: '&9{0} đã được load và kích hoạt.'
+  plugin-dir: '&cKhông tìm thấy thư mục plugin.'
+lookup:
+  found: '&9/{0} được đăng ký {1}.'
+  not-found: '&cLệnh "/{0}" chưa được đăng ký trong bất kỳ plugin.yml nào'
+reload:
+  all: '&9Tất cả các plugin đã được load lại.'
+  reloaded: '&9{0} đã được load lại.'
+unload:
+  failed: '&cKhông load được {0}.'
+  unloaded: '&9{0} đã được unload.'
+usage:
+  usage: '&9Lệnh: &7{0}'

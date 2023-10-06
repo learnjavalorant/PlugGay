@@ -1,0 +1,69 @@
+name: PlugGay
+main: vietnam.tansenpai.pluggay.PlugGay
+version: 1.0
+description: Quản lý plugin cho máy chủ Bukkit
+authors: [TanSenpai]
+api-version: 1.13
+folia-supported: true
+provides: [PlugGay]
+load: STARTUP
+softdepend:
+  - pluggay
+commands:
+  pluggay:
+    description: Manage plugins.
+    permission: pluggay.help
+    usage: /pluggay help
+      /pluggay list [-v]
+      /pluggay check <plugin|all> [-f]
+      /pluggay lookup <command>
+      /pluggay (info|usage|load|reload|unload) <plugin>
+permissions:
+  pluggay.admin:
+    description: Allows use of all pluggay commands.
+    default: op
+    children:
+      pluggay.update: true
+      pluggay.help: true
+      pluggay.list: true
+      pluggay.info: true
+      pluggay.usage: true
+      pluggay.lookup: true
+      pluggay.load: true
+      pluggay.reload: true
+      pluggay.unload: true
+      pluggay.check: true
+      pluggay.check.all: true
+  pluggay.update:
+    description: Cho phép người chơi xem các thông báo cập nhật.
+    default: op
+  pluggay.help:
+    description: Cho phép sử dụng lệnh help.
+    default: op
+  pluggay.list:
+    description: Cho phép sử dụng lệnh list.
+    default: op
+  pluggay.info:
+    description: Cho phép sử dụng lệnh info.
+    default: op
+  pluggay.usage:
+    description: Cho phép sử dụng lệnh usage.
+    default: op
+  pluggay.lookup:
+    description: Cho phép sử dụng lệnh lookup.
+    default: op
+  pluggay.load:
+    description: Cho phép sử dụng lệnh load.
+    default: op
+  pluggay.reload:
+    description: Cho phép sử dụng lệnh reload.
+    default: op
+  pluggay.unload:
+    description: Cho phép sử dụng lệnh unload.
+    default: op
+  pluggay.check:
+    description: Cho phép sử dụng lệnh check.
+    default: op
+  pluggay.check.all:
+    description: Cho phép sử dụng lệnh check all.
+    default: op
